@@ -1,8 +1,10 @@
-package com.alexdevp.starwars;
+package com.alexdevp.starwars.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.alexdevp.starwars.R;
 
 public class MainActivity extends AppCompatActivity {
 
