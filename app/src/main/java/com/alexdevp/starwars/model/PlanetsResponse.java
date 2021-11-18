@@ -6,15 +6,14 @@ public class PlanetsResponse {
     private int count;
     private String next;
     private String previous;
-    private List<Planet> results;
+    private Planet[] results;
 
-    public PlanetsResponse(int count, String next, String previous, List<Planet> results) {
+    public PlanetsResponse(int count, String next, String previous, Planet[] results) {
         this.count = count;
         this.next = next;
         this.previous = previous;
         this.results = results;
     }
-
 
     public int getCount() {
         return count;
@@ -28,7 +27,7 @@ public class PlanetsResponse {
         return previous;
     }
 
-    public List<Planet> getResults() {
+    public Planet[] getResults() {
         return results;
     }
 }

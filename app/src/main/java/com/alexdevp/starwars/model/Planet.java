@@ -6,10 +6,11 @@ import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Planet {
+public class Planet implements Serializable {
     @PrimaryKey
     @NonNull
     private String name;
