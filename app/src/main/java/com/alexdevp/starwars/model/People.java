@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 @Entity
-public class People {
+public class People implements Serializable {
     @PrimaryKey
     @NonNull
     @SerializedName("name")

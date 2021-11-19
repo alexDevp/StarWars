@@ -20,7 +20,7 @@ public class DatabaseRepositoryPeople {
         return AppDatabase.getInstance(context).getPeopleDao().getPeopleByName(name);
     }
 
-    public static void getPeople(Context context, final DatabaseRepositoryPlanets.OnDataAvailableCallBack<People[]> callback) {
+    public static void getPeople(Context context, final OnDataAvailableCallBack<People[]> callback) {
         final PeopleDAO peopleDAO = AppDatabase.getInstance(context).getPeopleDao();
 
         new Thread(() -> {

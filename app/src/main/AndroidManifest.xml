@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StarWars">
         <activity
+            android:name=".ui.PeopleDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PeopleActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.PlanetDetailsActivity"
             android:exported="false" />
         <activity
