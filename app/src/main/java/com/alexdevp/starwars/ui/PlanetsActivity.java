@@ -3,20 +3,16 @@ package com.alexdevp.starwars.ui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 
 import com.alexdevp.starwars.R;
 import com.alexdevp.starwars.model.Planet;
 import com.alexdevp.starwars.ui.adapters.PlanetsAdapter;
-import com.alexdevp.starwars.ui.adapters.local.DatabaseRepository;
+import com.alexdevp.starwars.ui.adapters.local.Repository.DatabaseRepositoryPlanets;
 
-public class PlanetsActivity extends AppCompatActivity implements DatabaseRepository.OnDataAvailableCallBack {
+public class PlanetsActivity extends AppCompatActivity implements DatabaseRepositoryPlanets.OnDataAvailableCallBack {
 
     private PlanetsAdapter adapter;
     private RecyclerView recyclerView;
@@ -44,7 +40,7 @@ public class PlanetsActivity extends AppCompatActivity implements DatabaseReposi
     @Override
     protected void onResume() {
         super.onResume();
-        DatabaseRepository.getPlanets(this, this);
+        DatabaseRepositoryPlanets.getPlanets(this, this);
     }
 
     @Override

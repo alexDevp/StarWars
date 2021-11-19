@@ -6,10 +6,10 @@ import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+import java.io.Serializable;
 
 @Entity
-public class Film {
+public class Film implements Serializable {
 
     @PrimaryKey
     @NonNull

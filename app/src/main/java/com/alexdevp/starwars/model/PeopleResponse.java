@@ -1,12 +1,12 @@
 package com.alexdevp.starwars.model;
 
-public class PlanetsResponse {
+public class PeopleResponse {
     private int count;
     private String next;
     private String previous;
-    private Planet[] results;
+    private People[] results;
 
-    public PlanetsResponse(int count, String next, String previous, Planet[] results) {
+    public PeopleResponse(int count, String next, String previous, People[] results) {
         this.count = count;
         this.next = next;
         this.previous = previous;
@@ -25,7 +25,7 @@ public class PlanetsResponse {
         return previous;
     }
 
-    public Planet[] getResults() {
+    public People[] getResults() {
         return results;
     }
 }

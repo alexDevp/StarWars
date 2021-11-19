@@ -7,23 +7,28 @@ import androidx.room.PrimaryKey;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 public class Planet implements Serializable {
     @PrimaryKey
     @NonNull
+    @SerializedName("name")
     private String name;
     @SerializedName("rotation_period")
     private String rotationPeriod;
     @SerializedName("orbital_period")
     private String orbitalPeriod;
+    @SerializedName("diameter")
     private String diameter;
+    @SerializedName("climate")
     private String climate;
+    @SerializedName("gravity")
     private String gravity;
+    @SerializedName("terrain")
     private String terrain;
     @SerializedName("surface_water")
     private String surfaceWater;
+    @SerializedName("population")
     private String population;
 
 

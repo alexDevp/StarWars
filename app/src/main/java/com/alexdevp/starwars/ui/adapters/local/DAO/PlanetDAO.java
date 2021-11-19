@@ -1,4 +1,4 @@
-package com.alexdevp.starwars.ui.adapters.local;
+package com.alexdevp.starwars.ui.adapters.local.DAO;
 
 
 import androidx.room.Dao;
@@ -6,9 +6,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 
 import com.alexdevp.starwars.model.Planet;
-
-import java.util.List;
-
 
 @Dao
 public interface PlanetDAO {
@@ -24,6 +21,4 @@ public interface PlanetDAO {
     @Insert
     void addPlanets(Planet[] planets);
 
-    //@Query("SELECT * FROM message WHERE timestamp > :timestamp")
-    //List<Message> getNewMessages(long timestamp);
 }

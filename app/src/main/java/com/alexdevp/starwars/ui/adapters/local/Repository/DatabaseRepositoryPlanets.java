@@ -1,4 +1,4 @@
-package com.alexdevp.starwars.ui.adapters.local;
+package com.alexdevp.starwars.ui.adapters.local.Repository;
 
 import android.content.Context;
 
@@ -7,19 +7,16 @@ import com.alexdevp.starwars.model.Planet;
 import com.alexdevp.starwars.model.PlanetsResponse;
 import com.alexdevp.starwars.services.PlanetsService;
 import com.alexdevp.starwars.ui.adapters.local.AppDatabase;
-import com.alexdevp.starwars.ui.adapters.local.PlanetDAO;
+import com.alexdevp.starwars.ui.adapters.local.DAO.PlanetDAO;
 import com.alexdevp.starwars.ui.adapters.local.PreferencesManager;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class DatabaseRepository {
+public class DatabaseRepositoryPlanets {
 
-
-    //PLANETS REPOSITORY
-
-    public static Planet getPlanetbyName(Context context, String name) {
+    public static Planet getPlanetByName(Context context, String name) {
         return AppDatabase.getInstance(context).getPlanetDao().getPlanetByName(name);
     }
 
@@ -64,7 +61,4 @@ public class DatabaseRepository {
         void onSuccess(T values);
         void onError(String Error);
     }
-
-    //FILMS REPOSITORY
-
 }

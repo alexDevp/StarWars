@@ -6,9 +6,9 @@ public class FilmsResponse {
     private int count;
     private String next;
     private String previous;
-    private List<Film> results;
+    private Film[] results;
 
-    public FilmsResponse(int count, String next, String previous, List<Film> results) {
+    public FilmsResponse(int count, String next, String previous, Film[] results) {
         this.count = count;
         this.next = next;
         this.previous = previous;
@@ -28,7 +28,7 @@ public class FilmsResponse {
         return previous;
     }
 
-    public List<Film> getResults() {
+    public Film[] getResults() {
         return results;
     }
 }

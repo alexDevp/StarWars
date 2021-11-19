@@ -13,9 +13,9 @@ import retrofit2.http.Query;
 
 public interface FilmsService {
 
-    @GET("films/?format=json")
-    Call<FilmsResponse> getFilms(@Query("page") int page);
+    @GET("films")
+    Call<FilmsResponse> getFilms();
 
-    @GET("films/{filmsId}/")
+    @GET("films/{filmId}/")
     Call<Film> getFilm(@Path("filmId") int filmId, @Query("format") String format);
 }
