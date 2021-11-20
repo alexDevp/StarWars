@@ -20,7 +20,7 @@ public class DatabaseRepositoryFilms {
         return AppDatabase.getInstance(context).getFilmDao().getFilmByTitle(title);
     }
 
-    public static void getFilm(Context context, final OnDataAvailableCallBack<Film[]> callback) {
+    public static void getFilms(Context context, final OnDataAvailableCallBack<Film[]> callback) {
         final FilmDAO filmDAO = AppDatabase.getInstance(context).getFilmDao();
 
         new Thread(() -> {

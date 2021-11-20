@@ -32,11 +32,12 @@
         android:id="@+id/textView_row_name"
         android:layout_margin="20dp"
         android:fontFamily="sans-serif-medium"
-        android:textSize="26sp"/>
+        android:textSize="26sp"
+        android:textColor="@color/black_blue"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#B8B8B8"
+        android:background="#CEFFFFFF"
         android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@id/imageView_row_image"/>
 

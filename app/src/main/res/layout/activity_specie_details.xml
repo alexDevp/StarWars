@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.PeopleDetailsActivity">
+    tools:context=".ui.SpecieDetailsActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -65,24 +65,24 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_height"
+                android:id="@+id/container_classification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_height_lable"
+                    android:id="@+id/text_view_classification_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Height:"
+                    android:text="Classification:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_height_value"
+                    android:id="@+id/text_view_classification_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -90,29 +90,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_height_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_classification_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_mass"
+                android:id="@+id/container_designation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_mass_lable"
+                    android:id="@+id/text_view_designation_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Mass:"
+                    android:text="Designation:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_mass_value"
+                    android:id="@+id/text_view_designation_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -120,29 +120,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_mass_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_designation_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_hair_color"
+                android:id="@+id/container_average_height"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_hair_color_lable"
+                    android:id="@+id/text_view_average_height_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Hair Color:"
+                    android:text="Average Height:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_hair_color_value"
+                    android:id="@+id/text_view_average_height_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -150,29 +150,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_hair_color_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_average_height_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_skin_color"
+                android:id="@+id/container_skin_colors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_skin_color_lable"
+                    android:id="@+id/text_view_skin_colors_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Skin Color:"
+                    android:text="Skin Colors:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_skin_color_value"
+                    android:id="@+id/text_view_skin_colors_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -180,29 +180,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_skin_color_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_skin_colors_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_eye_color"
+                android:id="@+id/container_hair_colors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_eye_color_lable"
+                    android:id="@+id/text_view_hair_colors_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Eye Color:"
+                    android:text="Hair Colors:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_eye_color_value"
+                    android:id="@+id/text_view_hair_colors_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -210,29 +210,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_eye_color_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_hair_colors_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_birth_year"
+                android:id="@+id/container_eye_colors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_birth_year_lable"
+                    android:id="@+id/text_view_eye_colors_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Birth year:"
+                    android:text="Eye Colors:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_birth_year_value"
+                    android:id="@+id/text_view_eye_colors_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -240,29 +240,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_birth_year_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_eye_colors_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_gender"
+                android:id="@+id/container_average_lifespan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_gender_lable"
+                    android:id="@+id/text_view_average_lifespan_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Gender:"
+                    android:text="Average Lifespan:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_gender_value"
+                    android:id="@+id/text_view_average_lifespan_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -270,7 +270,37 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_gender_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_average_lifespan_lable"
+                    tools:text="Default Example Text" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_language_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Language:"
+                    android:textColor="@color/black_blue"
+                    android:textSize="26sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_language_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_language_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 

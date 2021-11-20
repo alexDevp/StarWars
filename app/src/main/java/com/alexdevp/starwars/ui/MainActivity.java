@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupClickListeners() {
         CardView planetsCard = findViewById(R.id.card_view_planets);
-        CardView spaceShipsCard = findViewById(R.id.card_view_space_ships);
+        CardView starShipsCard = findViewById(R.id.card_view_star_ships);
         CardView vehiclesCard = findViewById(R.id.card_view_vehicles);
         CardView peopleCard = findViewById(R.id.card_view_people);
         CardView filmsCard = findViewById(R.id.card_view_films);
@@ -38,6 +38,38 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, PeopleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        filmsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FilmsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        speciesCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SpeciesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        vehiclesCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, VehiclesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        starShipsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StarshipsActivity.class);
                 startActivity(intent);
             }
         });

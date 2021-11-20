@@ -25,22 +25,16 @@ public class Film implements Serializable {
     private String producer;
     @SerializedName("release_date")
     private String releaseDate;
-    @SerializedName("created")
-    private String created;
-    @SerializedName("edited")
-    private String edited;
     @SerializedName("url")
     private String url;
 
-    public Film(String title, String episodeId, String openingCrawl, String director, String producer, String releaseDate, String created, String edited, String url) {
+    public Film(String title, String episodeId, String openingCrawl, String director, String producer, String releaseDate, String url) {
         this.title = title;
         this.episodeId = episodeId;
         this.openingCrawl = openingCrawl;
         this.director = director;
         this.producer = producer;
         this.releaseDate = releaseDate;
-        this.created = created;
-        this.edited = edited;
         this.url = url;
     }
 
@@ -66,14 +60,6 @@ public class Film implements Serializable {
 
     public String getReleaseDate() {
         return releaseDate;
-    }
-
-    public String getCreated() {
-        return created;
-    }
-
-    public String getEdited() {
-        return edited;
     }
 
     public String getUrl() {

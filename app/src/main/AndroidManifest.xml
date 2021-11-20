@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StarWars">
         <activity
+            android:name=".ui.StarshipDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StarshipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.VehicleDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.VehiclesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SpecieDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SpeciesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FilmDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.PeopleDetailsActivity"
             android:exported="false" />
         <activity

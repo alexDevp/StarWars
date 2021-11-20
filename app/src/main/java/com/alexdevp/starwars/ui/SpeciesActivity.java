@@ -8,29 +8,29 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.alexdevp.starwars.R;
-import com.alexdevp.starwars.model.Film;
 import com.alexdevp.starwars.model.Planet;
-import com.alexdevp.starwars.ui.adapters.FilmsAdapter;
+import com.alexdevp.starwars.model.Specie;
 import com.alexdevp.starwars.ui.adapters.PlanetsAdapter;
-import com.alexdevp.starwars.ui.adapters.local.Repository.DatabaseRepositoryFilms;
+import com.alexdevp.starwars.ui.adapters.SpeciesAdapter;
 import com.alexdevp.starwars.ui.adapters.local.Repository.DatabaseRepositoryPlanets;
+import com.alexdevp.starwars.ui.adapters.local.Repository.DatabaseRepositorySpecies;
 
-public class FilmsActivity extends AppCompatActivity implements DatabaseRepositoryFilms.OnDataAvailableCallBack{
+public class SpeciesActivity extends AppCompatActivity implements DatabaseRepositorySpecies.OnDataAvailableCallBack {
 
-    private FilmsAdapter adapter;
+    private SpeciesAdapter adapter;
     private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_films);
-        recyclerView = findViewById(R.id.recycler_view_films);
+        setContentView(R.layout.activity_species);
+        recyclerView = findViewById(R.id.recycler_view_species);
 
-        adapter = new FilmsAdapter(this, new FilmsAdapter.ItemClickListener() {
+        adapter = new SpeciesAdapter(this, new SpeciesAdapter.ItemClickListener() {
             @Override
-            public void onItemClick(Film film) {
-                Intent intent = new Intent(FilmsActivity.this, FilmDetailsActivity.class);
-                intent.putExtra("Film", film);
+            public void onItemClick(Specie specie) {
+                Intent intent = new Intent(SpeciesActivity.this, SpecieDetailsActivity.class);
+                intent.putExtra("Specie", specie);
                 startActivity(intent);
             }
         });
@@ -41,15 +41,15 @@ public class FilmsActivity extends AppCompatActivity implements DatabaseReposito
     @Override
     protected void onResume() {
         super.onResume();
-        DatabaseRepositoryFilms.getFilms(this, this);
+        DatabaseRepositorySpecies.getSpecies(this, this);
     }
 
     @Override
-    public void onSuccess(final Object films) {
+    public void onSuccess(final Object species) {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                FilmsActivity.this.adapter.updateList((Film[]) films);
+                SpeciesActivity.this.adapter.updateList((Specie[]) species);
             }
         });
     }
@@ -58,7 +58,4 @@ public class FilmsActivity extends AppCompatActivity implements DatabaseReposito
     public void onError(String Error) {
         Log.e("MainActivity", Error);
     }
-
-
-
 }

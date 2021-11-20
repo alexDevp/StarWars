@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.PeopleDetailsActivity">
+    tools:context=".ui.FilmDetailsActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,24 +35,24 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_name"
+                android:id="@+id/container_Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_name_lable"
+                    android:id="@+id/text_view_title_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Name:"
+                    android:text="Title:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_name_value"
+                    android:id="@+id/text_view_title_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -60,29 +60,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_name_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_title_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_height"
+                android:id="@+id/container_episodeID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_height_lable"
+                    android:id="@+id/text_view_episodeID_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Height:"
+                    android:text="Episode ID:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_height_value"
+                    android:id="@+id/text_view_episodeID_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -90,29 +90,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_height_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_episodeID_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_mass"
+                android:id="@+id/container_openingCrawl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_mass_lable"
+                    android:id="@+id/text_view_openingCrawl_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Mass:"
+                    android:text="Opening Crawl:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_mass_value"
+                    android:id="@+id/text_view_openingCrawl_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -120,29 +120,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_mass_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_openingCrawl_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_hair_color"
+                android:id="@+id/container_director"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_hair_color_lable"
+                    android:id="@+id/text_view_director_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Hair Color:"
+                    android:text="Director:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_hair_color_value"
+                    android:id="@+id/text_view_director_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -150,29 +150,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_hair_color_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_director_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_skin_color"
+                android:id="@+id/container_producer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_skin_color_lable"
+                    android:id="@+id/text_view_producer_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Skin Color:"
+                    android:text="Producer:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_skin_color_value"
+                    android:id="@+id/text_view_producer_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -180,29 +180,29 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_skin_color_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_producer_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_eye_color"
+                android:id="@+id/container_release_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="12dp">
 
                 <TextView
-                    android:id="@+id/text_view_eye_color_lable"
+                    android:id="@+id/text_view_release_date_lable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Eye Color:"
+                    android:text="Release Date:"
                     android:textColor="@color/black_blue"
                     android:textSize="26sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_eye_color_value"
+                    android:id="@+id/text_view_release_date_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
@@ -210,72 +210,14 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_eye_color_lable"
-                    tools:text="Default Example Text" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_birth_year"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="12dp">
-
-                <TextView
-                    android:id="@+id/text_view_birth_year_lable"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Birth year:"
-                    android:textColor="@color/black_blue"
-                    android:textSize="26sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/text_view_birth_year_value"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/design_default_color_on_secondary"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_birth_year_lable"
-                    tools:text="Default Example Text" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="12dp">
-
-                <TextView
-                    android:id="@+id/text_view_gender_lable"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="Gender:"
-                    android:textColor="@color/black_blue"
-                    android:textSize="26sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/text_view_gender_value"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
-                    android:textColor="@color/design_default_color_on_secondary"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/text_view_gender_lable"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_release_date_lable"
                     tools:text="Default Example Text" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
+
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

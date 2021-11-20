@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 @Entity
-public class Specie {
+public class Specie implements Serializable {
     @PrimaryKey
     @NonNull
     @SerializedName("name")
@@ -30,12 +30,10 @@ public class Specie {
     private String average_lifespan;
     @SerializedName("language")
     private String language;
-    @SerializedName("url")
-    private String url;
 
     public Specie(@NonNull String name, String classification, String designation,
                   String average_height, String skin_colors, String hair_colors, String eye_colors,
-                  String average_lifespan, String language, String url) {
+                  String average_lifespan, String language) {
         this.name = name;
         this.classification = classification;
         this.designation = designation;
@@ -45,7 +43,6 @@ public class Specie {
         this.eye_colors = eye_colors;
         this.average_lifespan = average_lifespan;
         this.language = language;
-        this.url = url;
     }
 
     @NonNull
@@ -121,11 +118,4 @@ public class Specie {
         this.language = language;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
 }

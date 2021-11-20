@@ -28,10 +28,8 @@ public class People implements Serializable {
     private String birth_year;
     @SerializedName("gender")
     private String gender;
-    @SerializedName("url")
-    private String url;
 
-    public People(@NonNull String name, String height, String mass, String hair_color, String skin_color, String eye_color, String birth_year, String gender, String url) {
+    public People(@NonNull String name, String height, String mass, String hair_color, String skin_color, String eye_color, String birth_year, String gender) {
         this.name = name;
         this.height = height;
         this.mass = mass;
@@ -40,7 +38,6 @@ public class People implements Serializable {
         this.eye_color = eye_color;
         this.birth_year = birth_year;
         this.gender = gender;
-        this.url = url;
     }
 
     @NonNull
@@ -108,11 +105,4 @@ public class People implements Serializable {
         this.gender = gender;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
 }

@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 @Entity
-public class Vehicle {
+public class Vehicle implements Serializable {
 
     @PrimaryKey
     @NonNull
@@ -34,12 +34,10 @@ public class Vehicle {
     private String consumables;
     @SerializedName("vehicle_class")
     private String vehicle_class;
-    @SerializedName("url")
-    private String url;
 
     public Vehicle(@NonNull String name, String model, String manufacturer, String cost_in_credits,
                    String length, String max_atmosphering_speed, String crew, String passengers,
-                   String cargo_capacity, String consumables, String vehicle_class, String url) {
+                   String cargo_capacity, String consumables, String vehicle_class) {
         this.name = name;
         this.model = model;
         this.manufacturer = manufacturer;
@@ -51,7 +49,6 @@ public class Vehicle {
         this.cargo_capacity = cargo_capacity;
         this.consumables = consumables;
         this.vehicle_class = vehicle_class;
-        this.url = url;
     }
 
     @NonNull
@@ -143,11 +140,4 @@ public class Vehicle {
         this.vehicle_class = vehicle_class;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
 }
